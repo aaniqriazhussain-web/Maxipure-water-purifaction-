@@ -1,0 +1,406 @@
+
+‎<!DOCTYPE html>
+‎<html lang="en" class="scroll-smooth">
+‎<head>
+‎    <meta charset="UTF-8">
+‎    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+‎    <title>Maxipure Water Purification & Technologies | Pure Water, Healthy Life</title>
+‎    
+‎    <!-- Tailwind CSS CDN -->
+‎    <script src="https://cdn.tailwindcss.com"></script>
+‎    
+‎    <!-- Google Fonts Inter -->
+‎    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+‎    
+‎    <!-- FontAwesome Icons -->
+‎    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+‎    
+‎    <!-- Custom Brand Palette & Font Config -->
+‎    <script>
+‎        tailwind.config = {
+‎            theme: {
+‎                extend: {
+‎                    fontFamily: {
+‎                        sans: ['Inter', 'sans-serif'],
+‎                    },
+‎                    colors: {
+‎                        brand: {
+‎                            50: '#f0f9ff',
+‎                            100: '#e0f2fe',
+‎                            500: '#0ea5e9',
+‎                            600: '#0284c7',
+‎                            700: '#0369a1',
+‎                            800: '#075985',
+‎                            900: '#0c4a6e',
+‎                        }
+‎                    }
+‎                }
+‎            }
+‎        }
+‎    </script>
+‎</head>
+‎<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+‎
+‎    <!-- Top Announcement Bar -->
+‎    <div class="bg-brand-900 text-white py-2.5 px-4 text-xs sm:text-sm border-b border-brand-800">
+‎        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+‎            <div class="flex items-center space-x-2">
+‎                <span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+‎                <a href="https://wa.me/923000852908" target="_blank" rel="noopener noreferrer" class="font-medium hover:text-brand-100 transition flex items-center gap-1.5">
+‎                    <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+‎                    <span>+92 300 0852908 WhatsApp Order & Inquiry</span>
+‎                </a>
+‎            </div>
+‎            <div class="flex items-center space-x-4 text-brand-100 text-xs">
+‎                <span class="flex items-center gap-1.5">
+‎                    <i class="fa-solid fa-location-dot text-brand-500"></i>
+‎                    Lahore, Ichhra
+‎                </span>
+‎                <span class="hidden md:inline text-brand-700">|</span>
+‎                <span class="hidden md:flex items-center gap-1.5">
+‎                    <i class="fa-solid fa-certificate text-brand-500"></i>
+‎                    Maxipure Pakistan • Maxipure Taiwan Tech
+‎                </span>
+‎            </div>
+‎        </div>
+‎    </div>
+‎
+‎    <!-- Sticky Navigation Header -->
+‎    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80">
+‎        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+‎            <div class="flex items-center justify-between h-20">
+‎                <!-- Brand Logo -->
+‎                <a href="#home" class="flex items-center gap-3 group">
+‎                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-500 to-brand-800 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+‎                        <i class="fa-solid fa-droplet text-xl"></i>
+‎                    </div>
+‎                    <div>
+‎                        <span class="block text-xl sm:text-2xl font-extrabold tracking-tight text-brand-900 leading-none">
+‎                            MAXIPURE
+‎                        </span>
+‎                        <span class="block text-[10px] sm:text-[11px] font-bold tracking-wider text-brand-600 uppercase mt-1">
+‎                            Water Purification & Technologies
+‎                        </span>
+‎                    </div>
+‎                </a>
+‎
+‎                <!-- Desktop Navigation -->
+‎                <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+‎                    <a href="#home" class="hover:text-brand-600 transition">Home</a>
+‎                    <a href="#products" class="hover:text-brand-600 transition">Products</a>
+‎                    <a href="#services" class="hover:text-brand-600 transition">Services</a>
+‎                    <a href="#why-us" class="hover:text-brand-600 transition">Quality Standards</a>
+‎                    <a href="#location" class="hover:text-brand-600 transition">Location & Contact</a>
+‎                </nav>
+‎
+‎                <!-- Action Buttons & Mobile Menu Toggle -->
+‎                <div class="flex items-center gap-3">
+‎                    <a href="https://wa.me/923000852908?text=Assalam-o-Alaikum%20Maxipure%20Pakistan!%20I%20would%20like%20to%20inquire%20about%20your%20water%20purification%20systems." 
+‎                       target="_blank" 
+‎                       rel="noopener noreferrer"
+‎                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl shadow-md shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
+‎                        <i class="fa-brands fa-whatsapp text-base sm:text-lg"></i>
+‎                        <span>Direct WhatsApp</span>
+‎                    </a>
+‎
+‎                    <button id="mobile-menu-btn" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-xl text-slate-600 hover:bg-brand-50 hover:text-brand-700 transition">
+‎                        <i class="fa-solid fa-bars text-xl"></i>
+‎                    </button>
+‎                </div>
+‎            </div>
+‎        </div>
+‎
+‎        <!-- Mobile Dropdown Navigation -->
+‎        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 px-4 pt-3 pb-5 space-y-2 shadow-lg">
+‎            <a href="#home" class="mobile-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Home</a>
+‎            <a href="#products" class="mobile-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Products</a>
+‎            <a href="#services" class="mobile-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Services</a>
+‎            <a href="#why-us" class="mobile-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Quality Standards</a>
+‎            <a href="#location" class="mobile-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Location & Contact</a>
+‎        </div>
+‎    </header>
+‎
+‎    <!-- Hero Section -->
+‎    <section id="home" class="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-brand-100/70 pt-12 pb-20 lg:pt-20 lg:pb-28 border-b border-brand-100">
+‎        <!-- Decorative Background Blurs -->
+‎        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-500/10 blur-3xl pointer-events-none"></div>
+‎        <div class="absolute bottom-0 -left-24 w-80 h-80 rounded-full bg-brand-600/10 blur-3xl pointer-events-none"></div>
+‎
+‎        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+‎            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+‎                
+‎                <!-- Left Content -->
+‎                <div class="lg:col-span-7 space-y-6">
+‎                    <!-- Trust Badges -->
+‎                    <div class="flex flex-wrap items-center gap-2.5">
+‎                        <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-brand-600 text-white shadow-sm">
+‎                            <i class="fa-solid fa-shield-check"></i>
+‎                            100% Genuine Water Tech
+‎                        </span>
+‎                        <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white text-brand-800 border border-brand-200 shadow-sm">
+‎                            <i class="fa-solid fa-award text-brand-500"></i>
+‎                            Leading Water Treatment Experts in Lahore
+‎                        </span>
+‎                    </div>
+‎
+‎                    <!-- Main Headline -->
+‎                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-brand-900 tracking-tight leading-[1.15]">
+‎                        Clean, Safe & Pure Water For <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-500">Home & Industry</span>
+‎                    </h1>
+‎
+‎                    <!-- Subtext -->
+‎                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+‎                        <strong>Maxipure Pakistan</strong> (powered by genuine <strong>Maxipure Taiwan</strong> engineering) offers multi-stage Domestic RO Systems, High Capacity Commercial Plants (100 GPD to 50,000 GPD), Telei &amp; Euro Life filters, and professional chemical CIP membrane washing in Lahore, Ichhra and nationwide.
+‎                    </p>
+‎
+‎                    <!-- CTA Buttons -->
+‎                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+‎                        <a href="https://wa.me/923000852908?text=Hello%20Maxipure!%20I%20need%20consultation%20for%20a%20Water%20Purification%20System." 
+‎                           target="_blank" 
+‎                           rel="noopener noreferrer"
+‎                           class="inline-flex items-center justify-center gap-2.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-7 py-4 rounded-xl shadow-lg shadow-brand-600/25 transition transform hover:-translate-y-0.5 text-sm sm:text-base">
+‎                            <i class="fa-brands fa-whatsapp text-xl"></i>
+‎                            <span>WhatsApp Inquiry (+92 300 0852908)</span>
+‎                        </a>
+‎                        <a href="#products" 
+‎                           class="inline-flex items-center justify-center gap-2 bg-white hover:bg-brand-50 text-brand-800 border border-brand-200 font-semibold px-7 py-4 rounded-xl shadow-sm transition text-sm sm:text-base">
+‎                            <span>Explore Systems</span>
+‎                            <i class="fa-solid fa-arrow-down text-brand-500"></i>
+‎                        </a>
+‎                    </div>
+‎
+‎                    <!-- Quick Key Metrics -->
+‎                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-brand-200/60 max-w-xl">
+‎                        <div>
+‎                            <p class="text-xl sm:text-2xl font-extrabold text-brand-800">100–50K</p>
+‎                            <p class="text-xs text-slate-500 font-medium">GPD Plant Capacity</p>
+‎                        </div>
+‎                        <div>
+‎                            <p class="text-xl sm:text-2xl font-extrabold text-brand-800">Taiwan</p>
+‎                            <p class="text-xs text-slate-500 font-medium">Original RO Tech</p>
+‎                        </div>
+‎                        <div>
+‎                            <p class="text-xl sm:text-2xl font-extrabold text-brand-800">Lahore</p>
+‎                            <p class="text-xs text-slate-500 font-medium">Ichhra Service Hub</p>
+‎                        </div>
+‎                    </div>
+‎                </div>
+‎
+‎                <!-- Right Visual Showcase Card -->
+‎                <div class="lg:col-span-5">
+‎                    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl shadow-brand-900/10 border border-brand-100 relative">
+‎                        <div class="flex items-center justify-between pb-5 mb-5 border-b border-slate-100">
+‎                            <div class="flex items-center gap-3">
+‎                                <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl">
+‎                                    <i class="fa-solid fa-faucet-drip"></i>
+‎                                </div>
+‎                                <div>
+‎                                    <h2 class="font-bold text-brand-900 text-base">Maxipure Water Quality</h2>
+‎                                    <p class="text-xs text-slate-500">99.9% TDS, Heavy Metals &amp; Bacteria Removal</p>
+‎                                </div>
+‎                            </div>
+‎                            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-bold">
+‎                                Certified
+‎                            </span>
+‎                        </div>
+‎
+‎                        <!-- Multi-stage Filtration Visualizer -->
+‎                        <div class="space-y-3.5">
+‎                            <div class="p-3.5 rounded-2xl bg-brand-50/70 border border-brand-100 flex items-center justify-between">
+‎                                <div class="flex items-center gap-3">
+‎                                    <span class="w-7 h-7 rounded-lg bg-brand-600 text-white text-xs font-bold flex items-center justify-center">01</span>
+‎                                    <div>
+‎                                        <p class="text-sm font-bold text-slate-800">PP Sediment &amp; Carbon Pre-Filters</p>
+‎                                        <p class="text-xs text-slate-500">Telei &amp; Euro Life Genuine Cartridges</p>
+‎                                    </div>
+‎                                </div>
+‎                                <i class="fa-solid fa-check-circle text-brand-600"></i>
+‎                            </div>
+‎
+‎                            <div class="p-3.5 rounded-2xl bg-brand-50/70 border border-brand-100 flex items-center justify-between">
+‎                                <div class="flex items-center gap-3">
+‎                                    <span class="w-7 h-7 rounded-lg bg-brand-600 text-white text-xs font-bold flex items-center justify-center">02</span>
+‎                                    <div>
+‎                                        <p class="text-sm font-bold text-slate-800">Maxipure Taiwan RO Membrane</p>
+‎                                        <p class="text-xs text-slate-500">0.0001 Micron Ultra-Fine Filtration</p>
+‎                                    </div>
+‎                                </div>
+‎                                <i class="fa-solid fa-check-circle text-brand-600"></i>
+‎                            </div>
+‎
+‎                            <div class="p-3.5 rounded-2xl bg-brand-50/70 border border-brand-100 flex items-center justify-between">
+‎                                <div class="flex items-center gap-3">
+‎                                    <span class="w-7 h-7 rounded-lg bg-brand-600 text-white text-xs font-bold flex items-center justify-center">03</span>
+‎                                    <div>
+‎                                        <p class="text-sm font-bold text-slate-800">Mineral &amp; UV Sterilization</p>
+‎                                        <p class="text-xs text-slate-500">Balanced pH &amp; Healthy Drinking Water</p>
+‎                                    </div>
+‎                                </div>
+‎                                <i class="fa-solid fa-check-circle text-brand-600"></i>
+‎                            </div>
+‎                        </div>
+‎
+‎                        <!-- Instant TDS Test / Quote Callout -->
+‎                        <div class="mt-6 p-4 rounded-2xl bg-gradient-to-r from-brand-800 to-brand-900 text-white flex items-center justify-between gap-4">
+‎                            <div>
+‎                                <p class="text-xs text-brand-100">Need Water Testing or Plant Quote?</p>
+‎                                <p class="text-sm font-bold mt-0.5">Visit Ichhra Office or Chat Live</p>
+‎                            </div>
+‎                            <a href="https://wa.me/923000852908?text=Hi%20Maxipure,%20I%20want%20a%20free%20water%20TDS%20check%20/%20quotation." 
+‎                               target="_blank" 
+‎                               rel="noopener noreferrer"
+‎                               class="shrink-0 px-3.5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold transition">
+‎                                Ask Now
+‎                            </a>
+‎                        </div>
+‎                    </div>
+‎                </div>
+‎
+‎            </div>
+‎        </div>
+‎    </section>
+‎
+‎    <!-- Products & Solutions Grid -->
+‎    <section id="products" class="py-20 bg-white">
+‎        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+‎            <div class="text-center max-w-3xl mx-auto mb-14">
+‎                <span class="text-xs font-bold tracking-wider uppercase text-brand-600 bg-brand-50 px-3.5 py-1.5 rounded-full border border-brand-100">
+‎                    Complete Water Solutions
+‎                </span>
+‎                <h2 class="text-2xl sm:text-4xl font-extrabold text-brand-900 mt-4">
+‎                    Our Products &amp; Industrial Services
+‎                </h2>
+‎                <p class="text-slate-600 mt-3 text-sm sm:text-base">
+‎                    Engineered for Pakistani water conditions using authentic Maxipure Taiwan components, Telei &amp; Euro Life filters, and heavy-duty stainless steel or FRP vessels.
+‎                </p>
+‎            </div>
+‎
+‎            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+‎                
+‎                <!-- Card 1: Domestic RO Systems -->
+‎                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-brand-900/5 transition flex flex-col justify-between group">
+‎                    <div>
+‎                        <div class="w-13 h-13 w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:bg-brand-600 group-hover:text-white transition">
+‎                            <i class="fa-solid fa-house-chimney-window"></i>
+‎                        </div>
+‎                        <span class="text-xs font-bold text-brand-600 uppercase tracking-wide">Home &amp; Kitchen</span>
+‎                        <h3 class="text-xl font-bold text-brand-900 mt-1">Domestic RO Systems</h3>
+‎                        <p class="text-xs font-semibold text-slate-500 mt-0.5">Capacity: 100 GPD – 600 GPD</p>
+‎                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+‎                            5 to 8-stage under-sink and wall-mounted Reverse Osmosis purifiers with Maxipure Taiwan booster pumps, mineral cartridges, and pressure tanks for pure drinking water.
+‎                        </p>
+‎                        <ul class="mt-4 space-y-2 text-xs text-slate-600">
+‎                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Removes Arsenic, TDS, Chlorine &amp; Rust</li>
+‎                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Low-noise Taiwan Booster Pump</li>
+‎                        </ul>
+‎                    </div>
+‎                    <div class="mt-6 pt-4 border-t border-slate-200/80">
+‎                        <a href="https://wa.me/923000852908?text=Assalam-o-Alaikum%20Maxipure!%20I%20want%20details%20and%20price%20for%20Domestic%20RO%20Systems%20(100-600%20GPD)." 
+‎                           target="_blank" 
+‎                           rel="noopener noreferrer"
+‎                           class="w-full inline-flex items-center justify-center gap-2 bg-white hover:bg-emerald-600 text-brand-800 hover:text-white border border-brand-200 hover:border-emerald-600 font-semibold text-sm py-3 px-4 rounded-xl transition">
+‎                            <i class="fa-brands fa-whatsapp text-emerald-600 group-hover:text-current text-base"></i>
+‎                            <span>Inquire on WhatsApp</span>
+‎                        </a>
+‎                    </div>
+‎                </div>
+‎
+‎                <!-- Card 2: Commercial & Industrial RO Plants -->
+‎                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-brand-900/5 transition flex flex-col justify-between group">
+‎                    <div>
+‎                        <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:bg-brand-600 group-hover:text-white transition">
+‎                            <i class="fa-solid fa-industry"></i>
+‎                        </div>
+‎                        <span class="text-xs font-bold text-brand-600 uppercase tracking-wide">Commercial &amp; Factory</span>
+‎                        <h3 class="text-xl font-bold text-brand-900 mt-1">Commercial &amp; Industrial RO Plants</h3>
+‎                        <p class="text-xs font-semibold text-slate-500 mt-0.5">Capacity: 100 GPD to 50,000 GPD</p>
+‎                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+‎                            Custom-built RO plants for bottled water businesses, hospitals, schools, housing societies, textiles, and food &amp; beverage industries across Pakistan.
+‎                        </p>
+‎                        <ul class="mt-4 space-y-2 text-xs text-slate-600">
+‎                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> SS-304 Skid, Digital TDS &amp; Flow Meters</li>
+‎                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Automatic Flushing &amp; Dosing Systems</li>
+‎                        </ul>
+‎                    </div>
+‎                    <div class="mt-6 pt-4 border-t border-slate-200/80">
+‎                        <a href="https://wa.me/923000852908?text=Assalam-o-Alaikum%20Maxipure!%20I%20need%20a%20quotation%20for%20Commercial%20%26%20Industrial%20RO%20Plants%20(100%20to%2050,000%20GPD)." 
+‎                           target="_blank" 
+‎                           rel="noopener noreferrer"
+‎                           class="w-full inline-flex items-center justify-center gap-2 bg-white hover:bg-emerald-600 text-brand-800 hover:text-white border border-brand-200 hover:border-emerald-600 font-semibold text-sm py-3 px-4 rounded-xl transition">
+‎                            <i class="fa-brands fa-whatsapp text-emerald-600 group-hover:text-current text-base"></i>
+‎                            <span>Inquire on WhatsApp</span>
+‎                        </a>
+‎                    </div>
+‎                </div>
+‎
+‎                <!-- Card 3: Telei & Euro Life Filters & Membranes -->
+‎                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-brand-900/5 transition flex flex-col justify-between group">
+‎                    <div>
+‎                        <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:bg-brand-600 group-hover:text-white transition">
+‎                            <i class="fa-solid fa-filter"></i>
+‎                        </div>
+‎                        <span class="text-xs font-bold text-brand-600 uppercase tracking-wide">Original Spares</span>
+‎                        <h3 class="text-xl font-bold text-brand-900 mt-1">Telei &amp; Euro Life Filters &amp; Membranes</h3>
+‎                        <p class="text-xs font-semibold text-slate-500 mt-0.5">10" &amp; 20" Cartridges • 4040 &amp; 8040 Membranes</p>
+‎                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+‎                            Genuine PP spun sediment filters, GAC/CTO coconut shell carbon blocks, inline post-carbon, mineral filters, and high-rejection RO membranes.
+‎                        </p>
+‎                        <ul class="mt-4 space-y-2 text-xs text-slate-600">
+‎                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> 100% Authentic Telei &amp; Euro Life Stock</li>
+‎                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Retail &amp; Wholesale Supply in Lahore</li>
+‎                        </ul>
+‎                    </div>
+‎                    <div class="mt-6 pt-4 border-t border-slate-200/80">
+‎                        <a href="https://wa.me/923000852908?text=Assalam-o-Alaikum%20Maxipure!%20I%20want%20to%20order%20Telei%20%26%20Euro%20Life%20Replacement%20Filters%20%26%20Membranes." 
+‎                           target="_blank" 
+‎                           rel="noopener noreferrer"
+‎                           class="w-full inline-flex items-center justify-center gap-2 bg-white hover:bg-emerald-600 text-brand-800 hover:text-white border border-brand-200 hover:border-emerald-600 font-semibold text-sm py-3 px-4 rounded-xl transition">
+‎                            <i class="fa-brands fa-whatsapp text-emerald-600 group-hover:text-current text-base"></i>
+‎                            <span>Inquire on WhatsApp</span>
+‎                        </a>
+‎                    </div>
+‎                </div>
+‎
+‎                <!-- Card 4: Water Softeners & UF Plants -->
+‎                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-brand-900/5 transition flex flex-col justify-between group">
+‎                    <div>
+‎                        <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:bg-brand-600 group-hover:text-white transition">
+‎                            <i class="fa-solid fa-water"></i>
+‎                        </div>
+‎                        <span class="text-xs font-bold text-brand-600 uppercase tracking-wide">Whole-House &amp; Boiler Protection</span>
+‎                        <h3 class="text-xl font-bold text-brand-900 mt-1">Water Softeners &amp; UF Plants</h3>
+‎                        <p class="text-xs font-semibold text-slate-500 mt-0.5">Manual &amp; Automatic Multi-Port Valves</p>
+‎                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+‎                            Eliminate hard water scaling in geysers, boilers, pipelines, and appliances with high-capacity Ion-Exchange Water Softeners and Ultrafiltration (UF) plants.
+‎                        </p>
+‎                        <ul class="mt-4 space-y-2 text-xs text-slate-600">
+‎                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Prevents Hair Fall &amp; Limescale Buildup</li>
+‎                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> High-Grade Cation Resin &amp; FRP Vessels</li>
+‎                        </ul>
+‎                    </div>
+‎                    <div class="mt-6 pt-4 border-t border-slate-200/80">
+‎                        <a href="https://wa.me/923000852908?text=Assalam-o-Alaikum%20Maxipure!%20I%20would%20like%20information%20on%20Water%20Softeners%20%26%20UF%20Plants." 
+‎                           target="_blank" 
+‎                           rel="noopener noreferrer"
+‎                           class="w-full inline-flex items-center justify-center gap-2 bg-white hover:bg-emerald-600 text-brand-800 hover:text-white border border-brand-200 hover:border-emerald-600 font-semibold text-sm py-3 px-4 rounded-xl transition">
+‎                            <i class="fa-brands fa-whatsapp text-emerald-600 group-hover:text-current text-base"></i>
+‎                            <span>Inquire on WhatsApp</span>
+‎                        </a>
+‎                    </div>
+‎                </div>
+‎
+‎                <!-- Card 5: Chemical CIP Membrane Washing & Maintenance -->
+‎                <div id="services" class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-brand-900/5 transition flex flex-col justify-between group md:col-span-2 lg:col-span-2">
+‎                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+‎                        <div class="lg:col-span-8">
+‎                            <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:bg-brand-600 group-hover:text-white transition">
+‎                                <i class="fa-solid fa-flask-vial"></i>
+‎                            </div>
+‎                            <span class="text-xs font-bold text-brand-600 uppercase tracking-wide">Technical Service &amp; Recovery</span>
+‎                            <h3 class="text-xl font-bold text-brand-900 mt-1">Chemical CIP Membrane Washing &amp; Maintenance</h3>
+‎                            <p class="text-xs font-semibold text-slate-500 mt-0.5">4040 &amp; 8040 Industrial RO Membrane Cleaning • Antiscalant Chemicals</p>
+‎                            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+‎                                Restore choked or low-flow commercial RO membranes back to peak performance! Our specialized Clean-In-Place (CIP) acidic and alkaline chemical washing removes calcium carbonate scaling, iron fouling, and bio-slime—saving you the cost of premature membrane replacement.
+‎                            </p>
+‎                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mt-4 text-xs text-slate-600">
+‎                                <div class="flex items-center gap-2"><i class="fa-solid fa-check
